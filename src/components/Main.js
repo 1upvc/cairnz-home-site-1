@@ -73,16 +73,17 @@ const Main = (props) => {
           stake proportional to the amount of ADA held.  Details of stake pool(s) we support are located below.
           </p>
           <p>
-          Participate by delegating to the following pool(s):
+          Participate by delegating to supported pool(s):
           <li>Ticker(s): PATH</li>
-          <li>Expected Annual Reward Rate: ~3-10% </li>
-          <li>Commission: Coming Soon </li>
-          <li>Delegation Hash: Coming Soon</li>
-          <li>Machine Specs: Coming Soon</li>
-          <li>Pool Margin: Coming Soon</li>
-          <li>Pledge: Coming Soon</li>
+          <li>Pool Meta: https://tinyurl.com/yzu768a7 </li>
+          <li>Expected Annual Reward Target Rate: avg. 5% </li>
+          <li>Commission: 0 </li>
+          <li>Delegation Meta Data Hash: d2821c5164fad6a2ddbaf1754a9ce13d2397ea7ed70e6f18b643d661a1a9fb2e</li>
+          <li>Machine Specs: Ubuntu 20.04 LTS CSP hosted (Block & Relays)</li>
+          <li>Pool Margin: 1% </li>
+          <li>Pledge: 125000000 Lovelace</li>
           <li>Payout Frequency: Every Epoch (~5 days)</li>
-          <li>Potential Rewards Per Epoch: Coming Soon</li>
+          <li>Potential Rewards Per Epoch: Info Coming Soon</li>
           </p>
           <p>
           Stake with other Partners & Guidance
