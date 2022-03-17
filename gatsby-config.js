@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'dimension-v4',
-        short_name: 'Gatsby Starter',
+        name: 'The Path',
+        short_name: 'Cairnz',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
