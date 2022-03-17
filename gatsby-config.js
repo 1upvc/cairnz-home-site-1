@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'The Path',
-        short_name: 'Cairnz - Crypto Stake Paths',
+        short_name: 'Cairnz - Crypto Stake Staking',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
