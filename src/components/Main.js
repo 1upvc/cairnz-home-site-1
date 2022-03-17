@@ -187,7 +187,7 @@ const Main = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="https://gihub.com/donaldboulton/donboulton.com" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <Link to="https://gihub.com/1upvc.com" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
                 <RiGithubFill alt='Github'
                   style={{
                     fontSize: "2em",
