@@ -19,7 +19,7 @@ const Main = (props) => {
             <h2 className="major">About</h2>
           </Link>
           <span className="image main">
-            <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+            <Link to="https://cairnz.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
               <StaticImage
                 formats={["auto", "webp"]}
                 src="../../static/assets/pic01.jpg"
@@ -51,7 +51,7 @@ const Main = (props) => {
           <h2 className="major">Stake</h2>
         </Link>
           <span className="image main">
-            <Link to="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
+            <Link to="https://cairnz.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
               <StaticImage
                 formats={["auto", "webp"]}
                 src="../../static/assets/pic02.jpg"
@@ -110,7 +110,7 @@ const Main = (props) => {
             <h2 className="major">Lab</h2>
           </Link>
           <span className="image main">
-            <Link to="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
+            <Link to="https://cairnz.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
               <StaticImage
                 formats={["auto", "webp"]}
                 src="../../static/assets/pic03.jpg"
