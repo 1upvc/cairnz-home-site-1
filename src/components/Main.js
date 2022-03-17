@@ -119,7 +119,7 @@ const Main = (props) => {
             </Link>
           </span>
           <p>
-            Coming Soon
+            Coming Soon.  We are planning to setup a minilab powered by Kibana for users to explore asset (e.g., crypto data).
           </p>
           {close}
         </article>
