@@ -13,7 +13,7 @@ const Header = (props) => (
               <h1>CAIRNZ</h1>
               <p>
                 Find the path to {' '}
-               <a href="https://tinyurl.com/yzu768a7">Stake Pools</a> and explore
+               <a href="https://tinyurl.com/yzu768a7">Stake Pools</a> and explore {' '}
                 <br />
                 blockchain {' '}
                 <a href="https://coindesk.com">data</a> all with us.
