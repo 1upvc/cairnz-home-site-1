@@ -62,7 +62,7 @@ const Main = (props) => {
           <p>
           </p>
           <p>
-          We beleive in a decentralized future of commerce and are supporters
+          We believe in a decentralized future of commerce and are supporters
           of the <a href='https://cardano.org/'>Cardano Project</a>.  Staking provides an opportunity
           for securing the Cardano network or other networks (e.g., ETH, DASH) by processing data and keeping the network trusted.
           </p>
