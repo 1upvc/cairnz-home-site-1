@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import PropTypes from 'prop-types'
 import Bio from "./bio"
 
@@ -22,10 +21,10 @@ const Header = (props) => (
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Stake</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>Lab</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('intro') }}>About</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('work') }}>Stake</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('about') }}>Lab</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('contact') }}>Contact</a></li>
             </ul>
         </nav>
     </header>

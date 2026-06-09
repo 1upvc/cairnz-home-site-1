@@ -7,7 +7,7 @@ const SecondPage = () => (
   <Layout>
     <h1>Terms of Use</h1>
     <Link to="/">Return to homepage</Link>
-    <p>Date of Last Update: February 1, 2022</p>
+    <p>Date of Last Update: June 1, 2026</p>
     <h2>Introduction</h2>
     <p>These terms of use (these “Terms”) cover your use of and access to https://1upvc.com and its associated domains (the “Website”). These Terms form part of a binding contract between you and Cairnz d.b.a (doing business as and under) 1UP Ventures, LLC (“we,” “us,” “our,” or “1UPVC”). By using or accessing the Website, you are agreeing to both these Terms and our Privacy Policy (collectively, this “Agreement”). If you use or access the Website in your capacity as a representative or employee of an organization, you agree to this Agreement on that organization’s behalf and you represent and warrant that you have the authority do so. References to “you,” “your” or similar terms in this Agreement refer to the individual or organization agreeing to this Agreement.
     PLEASE READ THIS AGREEMENT CAREFULLY. IT INCLUDES IMPORTANT INFORMATION ABOUT YOUR LEGAL RIGHTS AND OBLIGATIONS. IF YOU DO NOT ACCEPT THIS AGREEMENT, WE DO NOT GRANT YOU ANY LICENSE OR USE RIGHTS HEREUNDER, AND YOU MAY NOT USE OR ACCESS THE WEBSITE.</p>
@@ -258,5 +258,7 @@ const SecondPage = () => (
     </p>
   </Layout>
 )
+
+export const Head = () => <title>Terms of Use | Cairnz</title>
 
 export default SecondPage

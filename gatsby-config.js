@@ -3,11 +3,10 @@ module.exports = {
     title: "Cairnz",
     author: "1UPVC",
     siteUrl: "https://cairnz.com",
-    siteImage: "/static/assets/mountain2.jpg",
+    siteImage: "/assets/mountain2.jpg",
     description: "Cardano Staking and Crypto Data"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'The Path',
-        short_name: 'Cairnz - Crypto Stake Staking',
+        name: 'Cairnz',
+        short_name: 'Cairnz',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

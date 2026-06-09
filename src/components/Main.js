@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
-import { RiTwitterFill, } from "@react-icons/all-files/ri/RiTwitterFill"
+import { RiTwitterFill } from "@react-icons/all-files/ri/RiTwitterFill"
 import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
 import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
-import { RiYoutubeFill, } from "@react-icons/all-files/ri/RiYoutubeFill"
+import { RiYoutubeFill } from "@react-icons/all-files/ri/RiYoutubeFill"
 
 const Main = (props) => {
   const close = <div className="close" onClick={() => {props.onCloseArticle()}}></div>
@@ -15,17 +14,13 @@ const Main = (props) => {
       <div ref={props.setWrapperRef} id="main" style={props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
         <article id="intro" className={`${props.article === 'intro' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <Link to="https://bibwoe.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
-            <h2 className="major">About</h2>
-          </Link>
+          <h2 className="major">About</h2>
           <span className="image main">
-            <Link to="https://cairnz.com" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
-              <StaticImage
-                formats={["auto", "webp"]}
-                src="../../static/assets/pic01.jpg"
-                alt="Intro"
-              />
-            </Link>
+            <StaticImage
+              formats={["auto", "webp"]}
+              src="../../static/assets/pic01.jpg"
+              alt="Intro"
+            />
           </span>
           <p>
           Our mission is to simple: grow and support proof of stake (PoS) solutions.
@@ -47,20 +42,14 @@ const Main = (props) => {
         </article>
 
         <article id="work" className={`${props.article === 'work' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-        <Link to="https://mansbooks.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
           <h2 className="major">Stake</h2>
-        </Link>
           <span className="image main">
-            <Link to="https://cairnz.com" rel="noopener noreferrer" target="_blank" area-label="Mansbooks">
-              <StaticImage
-                formats={["auto", "webp"]}
-                src="../../static/assets/pic02.jpg"
-                alt="Work"
-              />
-            </Link>
+            <StaticImage
+              formats={["auto", "webp"]}
+              src="../../static/assets/pic02.jpg"
+              alt="Work"
+            />
           </span>
-          <p>
-          </p>
           <p>
           We believe in a decentralized future of commerce and are supporters
           of the <a href='https://cardano.org/'>Cardano Project</a>.  Staking provides an opportunity
@@ -79,7 +68,7 @@ const Main = (props) => {
           <li>Expected Annual Reward Target Rate: avg. 5% </li>
           <li>Commission: 0 </li>
           <li>Delegation Meta Data Hash: d2821c5164fad6a2ddbaf1754a9ce13d2397ea7ed70e6f18b643d661a1a9fb2e</li>
-          <li>Machine Specs: Ubuntu 20.04 LTS CSP hosted (Block & Relays)</li>
+          <li>Machine Specs: Ubuntu 24.04 LTS CSP hosted (Block & Relays)</li>
           <li>Pool Margin: 1% </li>
           <li>Pledge: 125000000 Lovelace</li>
           <li>Payout Frequency: Every Epoch (~5 days)</li>
@@ -94,7 +83,7 @@ const Main = (props) => {
           </p>
           <p>
           If interested, please reach out for an introduction to stake digital assets with a Partner.
-          Alternatively, use the following details Partner Link: <a href='staked.us/?pid=FDrCpe2et1'>Staked.US</a> | Code: FDrCpe2et1
+          Alternatively, use the following details Partner Link: <a href='https://staked.us/?pid=FDrCpe2et1'>Staked.US</a> | Code: FDrCpe2et1
           </p>
           <p>
           For further guidance on Cardano and stake pools, please
@@ -106,17 +95,13 @@ const Main = (props) => {
         </article>
 
         <article id="about" className={`${props.article === 'about' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <Link to="https://publiuslogic.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
-            <h2 className="major">Lab</h2>
-          </Link>
+          <h2 className="major">Lab</h2>
           <span className="image main">
-            <Link to="https://cairnz.com" rel="noopener noreferrer" target="_blank" area-label="PubliusLogic">
-              <StaticImage
-                formats={["auto", "webp"]}
-                src="../../static/assets/pic03.jpg"
-                alt="About"
-              />
-            </Link>
+            <StaticImage
+              formats={["auto", "webp"]}
+              src="../../static/assets/pic03.jpg"
+              alt="About"
+            />
           </span>
           <p>
             Coming Soon.  We are planning to setup a minilab powered by Kibana for users to explore asset (e.g., crypto data).
@@ -154,18 +139,18 @@ const Main = (props) => {
           </form>
           <ul className="icons">
             <li>
-              <Link to="https://twitter.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
-                <RiTwitterFill alt='Twitter'
+              <a href="#" className="icon" aria-label="X (Twitter)">
+                <RiTwitterFill alt='X (Twitter)'
                   style={{
                     fontSize: "2rem",
                     color: "gray",
                   }}
                 />
-                <span className="label">Twitter</span>
-              </Link>
+                <span className="label">X</span>
+              </a>
             </li>
             <li>
-              <Link to="https://facebook.com/donboulton" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <a href="#" className="icon" aria-label="Facebook">
                 <RiFacebookBoxFill alt='Facebook'
                   style={{
                     fontSize: "2em",
@@ -173,10 +158,10 @@ const Main = (props) => {
                   }}
                 />
                 <span className="label">Facebook</span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://www.instagram.com/boulton3662/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
+              <a href="#" className="icon" aria-label="Instagram">
                 <RiInstagramFill alt='Instagram'
                   style={{
                     fontSize: "2em",
@@ -184,29 +169,29 @@ const Main = (props) => {
                   }}
                 />
                 <span className="label">Instagram</span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://gihub.com/1upvc.com" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
-                <RiGithubFill alt='Github'
+              <a href="#" className="icon" aria-label="GitHub">
+                <RiGithubFill alt='GitHub'
                   style={{
                     fontSize: "2em",
                     color: "gray",
                   }}
                 />
                 <span className="label">GitHub</span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://youtube.com/donboulton/" className="icon" rel="noopener noreferrer" target="_blank" area-label="Bibwoe">
-                <RiYoutubeFill alt='Youtube'
+              <a href="#" className="icon" aria-label="YouTube">
+                <RiYoutubeFill alt='YouTube'
                   style={{
                     fontSize: "2em",
                     color: "gray",
                   }}
                 />
-                <span className="label">Youtube</span>
-              </Link>
+                <span className="label">YouTube</span>
+              </a>
             </li>
           </ul>
           {close}

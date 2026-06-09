@@ -119,4 +119,13 @@ class IndexPage extends React.Component {
   }
 }
 
+export const Head = () => (
+  <>
+    <title>Cairnz</title>
+    <meta name="description" content="Cairnz, ADA Staking" />
+    <meta name="keywords" content="Cairnz, cardano staking" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  </>
+)
+
 export default IndexPage

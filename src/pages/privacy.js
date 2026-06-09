@@ -7,7 +7,7 @@ const SecondPage = () => (
   <Layout>
     <h1>Privacy Policy</h1>
     <Link to="/">Return to homepage</Link>
-    <p>Date of Last Update: February 1, 2022</p>
+    <p>Date of Last Update: June 1, 2026</p>
     <h2>Introduction and Purpose</h2>
     <p> Cairnz d.b.a as 1UP Ventures, LLC. is committed to protecting privacy. We have prepared this privacy policy (this “Privacy Policy”) to describe our practices regarding the Personal Data (as defined below) and other information Cairnz and its affiliates (“we,” “us,” “our,” or “CAIRNZ”), collect from users of our website located at cairnz.com and in connection with our solutions (e.g., products) and services (the "Products"). This policy also informs how that information collected may be used, with whom it may be shared, and the options you have to control the dissemination and use of your information.  In addition, this Privacy Policy tells you about your privacy rights and how the law protects you.
     This Privacy Policy, together with our Terms of Use constitute a single, binding agreement between you and Cairnz (this “Agreement”). By using or accessing the website and associated domains of  http://www.cairnz.com (the “Website”), you accept the practices set forth in this Privacy Policy and agree to be bound by this Agreement. This website is not intended for children and we do not knowingly collect data relating to children.
@@ -109,5 +109,7 @@ const SecondPage = () => (
       <p>If you have any questions about this Privacy Policy or legal inquiries regarding privacy, please contact us via our website.</p>
   </Layout>
 )
+
+export const Head = () => <title>Privacy Policy | Cairnz</title>
 
 export default SecondPage

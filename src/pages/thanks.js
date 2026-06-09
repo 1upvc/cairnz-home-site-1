@@ -33,4 +33,6 @@ const Thanks = () => (
   </Layout>
 )
 
+export const Head = () => <title>Thank You | Cairnz</title>
+
 export default Thanks

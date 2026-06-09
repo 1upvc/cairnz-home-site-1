@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import { RiArrowLeftSLine } from "@react-icons/all-files/ri/RiArrowLeftSLine"
-import { RiBugLine } from "@react-icons/all-files/ri/RiBugLine"
 import { RiSkullLine } from "@react-icons/all-files/ri/RiSkullLine"
 
 import Layout from "../components/layout"
@@ -36,17 +35,10 @@ const NotFound = () => (
         />
         Back to Homepage
       </Link>
-      <Link to="https://twitter.com/donboulton" className="button -outline">
-        Report this 
-        <RiBugLine className="button-icon"
-          style={{
-            fontSize: "1.5rem",
-            color: "gray",
-          }}        
-        />
-      </Link>
     </div>
   </Layout>
 )
+
+export const Head = () => <title>Page Not Found | Cairnz</title>
 
 export default NotFound
