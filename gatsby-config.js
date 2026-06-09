@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Cairnz",
-    author: "1UPVC",
+    author: "Arjun G. Raman",
     siteUrl: "https://cairnz.com",
     siteImage: "/assets/mountain2.jpg",
     description: "Cardano Staking and Crypto Data"

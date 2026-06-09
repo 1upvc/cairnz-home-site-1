@@ -2,7 +2,7 @@
   "name": "cairnz",
   "description": "Cairnz - Cardano Staking and Crypto Data",
   "version": "5.0.0",
-  "author": "1UPVC",
+  "author": "Arjun G. Raman",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "gatsby": "^5.16.1",

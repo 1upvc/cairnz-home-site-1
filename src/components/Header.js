@@ -5,7 +5,7 @@ import Bio from "./bio"
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-          <Bio className="icon" />
+          <Bio className="icon" logoVisible={props.logoVisible} />
         </div>
         <div className="content">
             <div className="inner">
@@ -32,7 +32,8 @@ const Header = (props) => (
 
 Header.propTypes = {
     onOpenArticle: PropTypes.func,
-    timeout: PropTypes.bool
+    timeout: PropTypes.bool,
+    logoVisible: PropTypes.bool
 }
 
 export default Header

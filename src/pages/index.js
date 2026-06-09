@@ -13,26 +13,43 @@ class IndexPage extends React.Component {
       timeout: false,
       articleTimeout: false,
       article: '',
-      loading: 'is-loading'
+      loading: 'is-loading',
+      logoVisible: false
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
-    this.setWrapperRef = this.setWrapperRef.bind(this);
-    this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.setWrapperRef = this.setWrapperRef.bind(this)
+    this.handleClickOutside = this.handleClickOutside.bind(this)
+    this.handleLoad = this.handleLoad.bind(this)
+  }
+
+  handleLoad() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' })
+    }, 350)
+    this.logoTimeoutId = setTimeout(() => {
+      this.setState({ logoVisible: true })
+    }, 1200)
   }
 
   componentDidMount () {
-    this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
-    }, 100);
-    document.addEventListener('mousedown', this.handleClickOutside);
+    if (document.readyState === 'complete') {
+      this.handleLoad()
+    } else {
+      window.addEventListener('load', this.handleLoad)
+    }
+    document.addEventListener('mousedown', this.handleClickOutside)
   }
 
   componentWillUnmount () {
     if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId)
     }
-    document.removeEventListener('mousedown', this.handleClickOutside);
+    if (this.logoTimeoutId) {
+      clearTimeout(this.logoTimeoutId)
+    }
+    window.removeEventListener('load', this.handleLoad)
+    document.removeEventListener('mousedown', this.handleClickOutside)
   }
 
   setWrapperRef(node) {
@@ -94,7 +111,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location}>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
-            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} logoVisible={this.state.logoVisible} />
             <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}

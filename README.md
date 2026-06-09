@@ -1,110 +1,84 @@
-# gatsby-starter-dimension-v4
+# Cairnz
 
-**This is a starter for Gatsby.js V4.7.2**
+Landing page for [cairnz.com](https://cairnz.com) — Cardano staking, blockchain data, and crypto resources.
 
-**The oldest V1 version of this starter can be found at:**
-<br/>
-**https://github.com/ChangoMan/gatsby-starter-dimension**
+---
 
-**The older V2 version of this starter can be found at:**
-<br/>
-Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
+## Stack
 
-> **Update** [Dimensions is Hosted on Gatsby Cloud](https://gatsbystarterdimensionsv4.gatsbyjs.io/) is now built with Gatsby V4 "4.3.0", this includes many performance updates with Latest Gatsby!
+| | |
+|---|---|
+| Framework | [Gatsby 5](https://www.gatsbyjs.com/) |
+| UI | React 18, SCSS (HTML5 UP Dimension theme) |
+| Hosting | [Netlify](https://www.netlify.com/) |
+| Node | ≥ 20 |
 
-[![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby) 
+**Key dependencies**
 
-gatsby-plugin-image With the Plugins proper usage.
+| Package | Purpose |
+|---|---|
+| `gatsby-plugin-image` | Optimized image processing |
+| `gatsby-plugin-sharp` | Image transformation |
+| `gatsby-plugin-manifest` | PWA manifest |
+| `gatsby-plugin-offline` | Service worker / offline support |
+| `gatsby-plugin-sitemap` | Auto-generated sitemap |
+| `gatsby-plugin-sass` | SCSS compilation (Dart Sass) |
+| `gatsby-plugin-netlify` | Netlify headers + redirects |
+| `gatsby-plugin-gdpr-cookies` | Cookie consent + analytics |
+| `react-cookie-consent` | Cookie banner UI |
+| `@react-icons/all-files` | Icon library |
 
-## Preview
+---
 
-https://gatsby-dimension.surge.sh/
+## Local development
 
-## Installation
+```bash
+npm install
+npm run develop          # starts at http://localhost:8000
+npm run develop -- --port 5969   # custom port
+```
 
-Install this starter (assuming Gatsby CLI is installed) by running.
-<br/>
-`gatsby new gatsby-starter-dimension-v4 https://github.com/donaldboulton/gatsby-starter-dimension-v4`
+Production build:
 
-## 🚀 Quick start
+```bash
+npm run build
+```
 
-1.  **Create a Gatsby site.**
+---
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the blog starter.
+## Key files
 
-    ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/donaldboulton/gatsby-starter-basic-instructions
-    ```
+| File | Purpose |
+|---|---|
+| `gatsby-config.js` | Site metadata, plugins, analytics IDs |
+| `netlify.toml` | Build config, Node version, security headers |
+| `src/pages/index.js` | Homepage (article modal layout) |
+| `src/components/Main.js` | Article content (About, Stake, Lab, Contact) |
+| `src/components/Header.js` | Site header and nav |
+| `src/components/Footer.js` | Footer with copyright |
+| `src/components/layout.js` | Shared layout wrapper + cookie consent |
+| `src/assets/scss/` | Theme styles |
 
-1.  **Start developing.**
+---
 
-    Navigate into your new site’s directory and start it up.
+## Content updates
 
-    ```shell
-    cd my-blog-starter/
-    gatsby develop
-    ```
+**Social links** — edit `src/components/Main.js`, find `href="#"` in the icons section and replace with real URLs.
 
-1.  **Open the source code and start editing!**
+**Analytics IDs** — edit `gatsby-config.js`, fill in the `trackingId` fields under `gatsby-plugin-gdpr-cookies`.
 
-    Your site is now running at `http://localhost:8000`!
+**Stake pool info** — edit the `#work` article in `src/components/Main.js`.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
+**Images** — replace files in `static/assets/` (`pic01.jpg`, `pic02.jpg`, `pic03.jpg`, `bg.jpg`).
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+---
 
-## 🚀 Quick start (Gatsby Cloud)
+## Deployment
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+Deploys automatically via Netlify on push to `master`. Node 20, Yarn install.
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-blog)
+---
 
-## 🧐 What's inside?
+## License
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── yarn-lock
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
+Copyright &copy; 2026 Arjun G. Raman. All rights reserved. See [LICENSE](./LICENSE).
