@@ -1,4 +1,4 @@
-# Cairnz
+# Babels
 
 Landing page for [cairnz.com](https://cairnz.com) — Cardano staking, blockchain data, and crypto resources.
 

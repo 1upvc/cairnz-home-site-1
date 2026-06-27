@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Cairnz",
+    title: "Babels",
     author: "Arjun G. Raman",
     siteUrl: "https://cairnz.com",
-    siteImage: "/assets/mountain2.jpg",
+    siteImage: "/assets/bg-austin.jpg",
     description: "Cardano Staking and Crypto Data"
   },
   plugins: [
@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Cairnz',
-        short_name: 'Cairnz',
+        name: 'Babels',
+        short_name: 'Babels',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

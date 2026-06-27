@@ -9,21 +9,17 @@ const Header = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-              <h1>CAIRNZ</h1>
+              <h1>BABELS</h1>
               <p>
-                Find the path to {' '}
-               <a href="https://tinyurl.com/yzu768a7">Stake Pools</a> and explore {' '}
-                <br />
-                blockchain {' '}
-                <a href="https://coindesk.com">data</a> all with us.
+                AI Detection Engineering Solutions and News for Cyber Defense Practitioners.
               </p>
             </div>
         </div>
         <nav>
             <ul>
                 <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('intro') }}>About</a></li>
-                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('work') }}>Stake</a></li>
-                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('about') }}>Lab</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('work') }}>GitHub</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('about') }}>Articles</a></li>
                 <li><a href="#" onClick={(e) => { e.preventDefault(); props.onOpenArticle('contact') }}>Contact</a></li>
             </ul>
         </nav>

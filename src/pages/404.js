@@ -39,6 +39,6 @@ const NotFound = () => (
   </Layout>
 )
 
-export const Head = () => <title>Page Not Found | Cairnz</title>
+export const Head = () => <title>Page Not Found | Babels</title>
 
 export default NotFound

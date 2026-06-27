@@ -33,6 +33,6 @@ const Thanks = () => (
   </Layout>
 )
 
-export const Head = () => <title>Thank You | Cairnz</title>
+export const Head = () => <title>Thank You | Babels</title>
 
 export default Thanks

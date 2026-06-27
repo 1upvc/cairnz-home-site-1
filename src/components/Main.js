@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticImage } from "gatsby-plugin-image"
-import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
 import { RiTwitterFill } from "@react-icons/all-files/ri/RiTwitterFill"
-import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
 import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
 import { RiYoutubeFill } from "@react-icons/all-files/ri/RiYoutubeFill"
 
@@ -15,96 +13,81 @@ const Main = (props) => {
 
         <article id="intro" className={`${props.article === 'intro' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main">
-            <StaticImage
-              formats={["auto", "webp"]}
-              src="../../static/assets/pic01.jpg"
-              alt="Intro"
-            />
-          </span>
           <p>
-          Our mission is to simple: grow and support proof of stake (PoS) solutions.
-          We strive to make PoS sustainable with a decentralized impact.
-
-          Since 2021, with democratization of crypto staking solutions, CAIRNZ has been dedicated to supporting a consistent sustainable path for proof of stake (PoS) or staking for everyone.  Often, staking paths have
-          have markers or cairns - some are known.  We identify unknowns on this journey as 'z' factors.
-          'Cairnz' helps  with security and network based solutions as well as education for organizations and individuals partcipating in the staking community.
+            Detection engineering is the practice of building, testing, and maintaining the rules and logic that power security alerts.
+            Done well, it is the difference between signal and noise. With the onset of AI and GenAI, organizations and teams need better capabilities and sharper insight to adapt.
           </p>
           <p>
-          We provide support in the following areas:
-          <ul>
-            <li>Stake Pools for Cardano</li>
-            <li>Blockchain Data</li>
-            <li>Cyber Security</li>
-          </ul>
+            Babels exists to make that practice more accessible. We build open-source tooling and share insights to help cyber defense practitioners raise the quality of their detections and their approaches. Whether it's model context protocol, large language models, agents, or a fully AI-powered SOC — we want to share good insight.
+          </p>
+          <p>
+            Babels work spans three areas:
+            <ul>
+              <li><strong>Tooling</strong> — open-source detection engineering solutions of all types.</li>
+              <li><strong>AI Integration</strong> — LLM-powered workflows for analysts and engineers who want to convert, validate, and deploy rules conversationally, either locally or through an agent via MCP.</li>
+              <li><strong>Insight</strong> — curated news and thought pieces on detection engineering, at a frequency of your choosing. Coming soon via Articles.</li>
+            </ul>
           </p>
           {close}
         </article>
 
         <article id="work" className={`${props.article === 'work' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Stake</h2>
-          <span className="image main">
-            <StaticImage
-              formats={["auto", "webp"]}
-              src="../../static/assets/pic02.jpg"
-              alt="Work"
-            />
-          </span>
+          <h2 className="major">GitHub</h2>
           <p>
-          We believe in a decentralized future of commerce and are supporters
-          of the <a href='https://cardano.org/'>Cardano Project</a>.  Staking provides an opportunity
-          for securing the Cardano network or other networks (e.g., ETH, DASH) by processing data and keeping the network trusted.
+            Babel is a detection engineering approach built on Elastic and SIGMA to help cyber defense practitioners. It comes in two open-source editions depending on your stack.
+          </p>
+
+          <h3>Babel — AI Edition</h3>
+          <p>
+            Babel AI integrates large language model (LLM) capabilities directly into the detection engineering workflow.
+            It accelerates SIGMA rule development, threat triage, and log analysis by pairing Elastic with AI-assisted reasoning.
           </p>
           <p>
-          The ability to delegate a stake is fundamental to how blockchain networks that are PoS are secured.
-          Our staking pools groups are based in North America and aimed at helping others maximize digital asset rewards by making staking or data processing
-          accessible as a source of value to anyone.   ADA held on the Cardano network represents a stake in the network, with the size of the
-          stake proportional to the amount of ADA held.  Details of stake pool(s) we support are located below.
+            An in-app panel is included, and Babel AI also ships an MCP server for analysts and engineers working inside an AI agent
+            (such as Claude) who want that agent to do real SIGMA work — convert, validate, test, and deploy — against an Elastic stack,
+            conversationally and agentically (the future is bright).
           </p>
           <p>
-          Participate by delegating to supported pool(s):
-          <li>Ticker(s): PATH</li>
-          <li>Pool Meta: https://tinyurl.com/yzu768a7 </li>
-          <li>Expected Annual Reward Target Rate: avg. 5% </li>
-          <li>Commission: 0 </li>
-          <li>Delegation Meta Data Hash: d2821c5164fad6a2ddbaf1754a9ce13d2397ea7ed70e6f18b643d661a1a9fb2e</li>
-          <li>Machine Specs: Ubuntu 24.04 LTS CSP hosted (Block & Relays)</li>
-          <li>Pool Margin: 1% </li>
-          <li>Pledge: 125000000 Lovelace</li>
-          <li>Payout Frequency: Every Epoch (~5 days)</li>
-          <li>Potential Rewards Per Epoch: Info Coming Soon</li>
+            Babel AI also supports local model integration, so you can plug in the latest releases from{' '}
+            <a href="https://huggingface.co">Hugging Face</a> and <a href="https://ollama.com">Ollama</a> directly into your workflow.
           </p>
           <p>
-          Stake with other Partners & Guidance
+            <a href="https://github.com/builtbyraman/babel_elastic_ai">View Babel AI on GitHub &rarr;</a>
+          </p>
+
+          <h3>Babel — Standard Edition</h3>
+          <p>
+            Babel Standard is a detection engineering pipeline built on Elastic with no AI dependencies.
+            It provides a structured approach to ingesting, normalizing, and alerting on security telemetry —
+            giving analysts full control over their detection stack using proven, auditable tooling.
           </p>
           <p>
-          Interested in working with an larger partner to expand your network?  We've got you covered.
-          Check out <a href='https://staked.us/'>Staked.US</a>.
+            <a href="https://github.com/builtbyraman">View Babel on GitHub &rarr;</a>
           </p>
+
+          <hr />
+
+          <h3>Special Thanks</h3>
           <p>
-          If interested, please reach out for an introduction to stake digital assets with a Partner.
-          Alternatively, use the following details Partner Link: <a href='https://staked.us/?pid=FDrCpe2et1'>Staked.US</a> | Code: FDrCpe2et1
+            Babel stands on the shoulders of exceptional open-source work. Thank you to the following organizations and communities:
           </p>
-          <p>
-          For further guidance on Cardano and stake pools, please
-          navigate to <a href='https://cardano.org/stake-pool-operation/'>Cardano Stake Pool Operation for Developers</a>.  To learn how to
-          delegate your Cardano (ADA), navigate to
-          video <a href='https://www.youtube.com/watch?v=VtkjM_0k4R0'>Delegating in Daedalus Wallet for Cardano</a>
-          </p>
+          <ul>
+            <li><a href="https://www.anthropic.com">Anthropic</a> — AI assisted coding with Claude; safety research and integration and models powering Babel AI</li>
+            <li><a href="https://securityonionsolutions.com">Security Onion</a> — threat hunting and network visibility platform</li>
+            <li><a href="https://github.com/nsacyber/GRASSMARLIN">GrassMarlin</a> — passive network mapping for ICS/SCADA environments</li>
+            <li><a href="https://www.elastic.co">Elastic</a> — the search and observability engine at the core of Babel</li>
+            <li><a href="https://sigmahq.io">SIGMA HQ</a> — the open standard for detection rules</li>
+            <li><a href="https://ollama.com">Ollama</a> — local LLM runtime for running models on-device</li>
+            <li><a href="https://huggingface.co">Hugging Face</a> — open-source models and datasets powering AI research</li>
+            <li><a href="https://unsplash.com/@stellarmond">Carlos Delgado</a> — background photography, via Unsplash</li>
+          </ul>
           {close}
         </article>
 
         <article id="about" className={`${props.article === 'about' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Lab</h2>
-          <span className="image main">
-            <StaticImage
-              formats={["auto", "webp"]}
-              src="../../static/assets/pic03.jpg"
-              alt="About"
-            />
-          </span>
+          <h2 className="major">Articles</h2>
           <p>
-            Coming Soon.  We are planning to setup a minilab powered by Kibana for users to explore asset (e.g., crypto data).
+            Coming Soon. We are planning to curate and create insight thought pieces and news on detection engineering. It'll be easy. One click to Subscribe.
           </p>
           {close}
         </article>
@@ -149,29 +132,7 @@ const Main = (props) => {
                 <span className="label">X</span>
               </a>
             </li>
-            <li>
-              <a href="#" className="icon" aria-label="Facebook">
-                <RiFacebookBoxFill alt='Facebook'
-                  style={{
-                    fontSize: "2em",
-                    color: "gray",
-                  }}
-                />
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon" aria-label="Instagram">
-                <RiInstagramFill alt='Instagram'
-                  style={{
-                    fontSize: "2em",
-                    color: "gray",
-                  }}
-                />
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
+<li>
               <a href="#" className="icon" aria-label="GitHub">
                 <RiGithubFill alt='GitHub'
                   style={{

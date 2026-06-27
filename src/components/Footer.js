@@ -5,7 +5,7 @@ import { SiGnuprivacyguard } from "@react-icons/all-files/si/SiGnuprivacyguard"
 
 const Footer = (props) => (
     <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
-        <p className="copyright">&copy;2026 Cairnz
+        <p className="copyright">&copy;2026 Babels
         {" "}
         <span>
           <RiHeart2Line
@@ -16,7 +16,7 @@ const Footer = (props) => (
               }}
           />
         </span>{" "}
-          CrytoIsReal
+          Austin, TX
         {" "}
         <span>
           <SiGnuprivacyguard

@@ -48,7 +48,7 @@ const Layout = ({ children, location }) => {
           textShadow: "2px 2px black",
         }}
       >
-        Cairnz uses cookies for a better web experience.{" "}
+        Babels uses cookies for a better web experience.{" "}
         <span
           style={{
             fontSize: "14px",

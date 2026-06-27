@@ -126,7 +126,7 @@ class IndexPage extends React.Component {
             <StaticImage
               id="bg"
               formats={["auto", "webp"]}
-              src="../../static/assets/mountain2.jpg"
+              src="../../static/assets/bg-austin.jpg"
               alt="Dimensions Image"
             />
           </div>
@@ -138,9 +138,9 @@ class IndexPage extends React.Component {
 
 export const Head = () => (
   <>
-    <title>Cairnz</title>
-    <meta name="description" content="Cairnz, ADA Staking" />
-    <meta name="keywords" content="Cairnz, cardano staking" />
+    <title>Babels</title>
+    <meta name="description" content="Babels, ADA Staking" />
+    <meta name="keywords" content="Babels, cardano staking" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   </>
 )

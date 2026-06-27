@@ -1,6 +1,6 @@
 {
-  "name": "cairnz",
-  "description": "Cairnz - Cardano Staking and Crypto Data",
+  "name": "babels",
+  "description": "Babels - Cardano Staking and Crypto Data",
   "version": "5.0.0",
   "author": "Arjun G. Raman",
   "dependencies": {

@@ -9,7 +9,7 @@ const SecondPage = () => (
     <Link to="/">Return to homepage</Link>
     <p>Date of Last Update: June 1, 2026</p>
     <h2>Introduction</h2>
-    <p>These terms of use (these “Terms”) cover your use of and access to https://cairnz.com and its associated domains (the “Website”). These Terms form part of a binding contract between you and Cairnz d.b.a. Arjun G. Raman (“we,” “us,” “our,” or “Cairnz”). By using or accessing the Website, you are agreeing to both these Terms and our Privacy Policy (collectively, this “Agreement”). If you use or access the Website in your capacity as a representative or employee of an organization, you agree to this Agreement on that organization’s behalf and you represent and warrant that you have the authority do so. References to “you,” “your” or similar terms in this Agreement refer to the individual or organization agreeing to this Agreement.
+    <p>These terms of use (these “Terms”) cover your use of and access to https://cairnz.com and its associated domains (the “Website”). These Terms form part of a binding contract between you and Babels d.b.a. Arjun G. Raman (“we,” “us,” “our,” or “Babels”). By using or accessing the Website, you are agreeing to both these Terms and our Privacy Policy (collectively, this “Agreement”). If you use or access the Website in your capacity as a representative or employee of an organization, you agree to this Agreement on that organization’s behalf and you represent and warrant that you have the authority do so. References to “you,” “your” or similar terms in this Agreement refer to the individual or organization agreeing to this Agreement.
     PLEASE READ THIS AGREEMENT CAREFULLY. IT INCLUDES IMPORTANT INFORMATION ABOUT YOUR LEGAL RIGHTS AND OBLIGATIONS. IF YOU DO NOT ACCEPT THIS AGREEMENT, WE DO NOT GRANT YOU ANY LICENSE OR USE RIGHTS HEREUNDER, AND YOU MAY NOT USE OR ACCESS THE WEBSITE.</p>
     <h2>Eligibility Requirements</h2>
     <h3>Minimum Age</h3>
@@ -30,7 +30,7 @@ const SecondPage = () => (
     <h3>Unowned or Licensed Content</h3>
     <p>Certain content on the Website may be protected by intellectual property, trade secret or other rights. You shall not copy, upload, download or share content unless you have the right to do so.</p>
     <h3>Interfering with the Website & Affiliated solutions</h3>
-    <p>You agree not to interfere with or disrupt the Website or servers, networks or devices connected to the Website or affiliated with website such as nodes or pools, including by transmitting any worms, viruses, spyware, malware or any other code of a destructive or disruptive nature. You shall not inject content or code or otherwise alter or interfere with the way any part of the Website is rendered or displayed in a user’s browser or device. In addition, you agree not to:
+    <p>You agree not to interfere with or disrupt the Website or servers, networks or devices connected to the Website including by transmitting any worms, viruses, spyware, malware or any other code of a destructive or disruptive nature. You shall not inject content or code or otherwise alter or interfere with the way any part of the Website is rendered or displayed in a user’s browser or device. In addition, you agree not to:
 
     (1)	probe, scan or test the vulnerability of any system or network;
 
@@ -250,7 +250,7 @@ const SecondPage = () => (
     </p>
     <h3>Governing Law; Venue</h3>
     <p>
-    If there is any dispute arising out of the Website, by using the Website, you expressly agree that any such dispute shall be governed by the laws of the State of Virginia, without giving effect to its conﬂict of laws principles. You acknowledge and agree that any violation of this Agreement may cause Arjun G. Raman irreparable harm, and therefore agree that Arjun G. Raman will be entitled to seek extraordinary relief in court, including but not limited to temporary restraining orders, preliminary injunctions and permanent injunctions without the necessity of posting a bond or other security, in addition to and without prejudice to any other rights or remedies that Arjun G. Raman may have for a breach of this Agreement.
+    If there is any dispute arising out of the Website, by using the Website, you expressly agree that any such dispute shall be governed by the laws of the State of Texas, without giving effect to its conflict of laws principles. You acknowledge and agree that any violation of this Agreement may cause Arjun G. Raman irreparable harm, and therefore agree that Arjun G. Raman will be entitled to seek extraordinary relief in court, including but not limited to temporary restraining orders, preliminary injunctions and permanent injunctions without the necessity of posting a bond or other security, in addition to and without prejudice to any other rights or remedies that Arjun G. Raman may have for a breach of this Agreement.
     </p>
     <h3>Translation</h3>
     <p>
@@ -259,6 +259,6 @@ const SecondPage = () => (
   </Layout>
 )
 
-export const Head = () => <title>Terms of Use | Cairnz</title>
+export const Head = () => <title>Terms of Use | Babels</title>
 
 export default SecondPage
