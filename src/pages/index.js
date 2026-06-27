@@ -139,8 +139,8 @@ class IndexPage extends React.Component {
 export const Head = () => (
   <>
     <title>Babels</title>
-    <meta name="description" content="Babels, ADA Staking" />
-    <meta name="keywords" content="Babels, cardano staking" />
+    <meta name="description" content="Babels, AI Detection Engineering Solutions and News for Cyber Defense Practitioners" />
+    <meta name="keywords" content="Babels, detection engineering, SIGMA, Elastic, cyber defense, AI security" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   </>
 )

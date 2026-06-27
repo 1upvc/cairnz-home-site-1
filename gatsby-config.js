@@ -4,7 +4,7 @@ module.exports = {
     author: "Arjun G. Raman",
     siteUrl: "https://cairnz.com",
     siteImage: "/assets/bg-austin.jpg",
-    description: "Cardano Staking and Crypto Data"
+    description: "AI Detection Engineering Solutions and News for Cyber Defense Practitioners"
   },
   plugins: [
     `gatsby-plugin-netlify`,

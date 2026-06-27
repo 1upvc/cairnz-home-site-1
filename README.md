@@ -1,6 +1,6 @@
 # Babels
 
-Landing page for [cairnz.com](https://cairnz.com) — Cardano staking, blockchain data, and crypto resources.
+Landing page for [cairnz.com](https://cairnz.com) — AI detection engineering solutions and news for cyber defense practitioners.
 
 ---
 

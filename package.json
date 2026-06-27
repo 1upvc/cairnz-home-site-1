@@ -1,6 +1,6 @@
 {
   "name": "babels",
-  "description": "Babels - Cardano Staking and Crypto Data",
+  "description": "Babels - AI Detection Engineering Solutions and News for Cyber Defense Practitioners",
   "version": "5.0.0",
   "author": "Arjun G. Raman",
   "dependencies": {
@@ -21,8 +21,10 @@
   },
   "keywords": [
     "gatsby",
-    "cardano",
-    "staking"
+    "detection-engineering",
+    "SIGMA",
+    "elastic",
+    "cyber-defense"
   ],
   "license": "0BSD",
   "scripts": {
