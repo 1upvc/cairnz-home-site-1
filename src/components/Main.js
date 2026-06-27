@@ -69,7 +69,7 @@ const Main = (props) => {
 
           <h3>Special Thanks</h3>
           <p>
-            Babel stands on the shoulders of exceptional open-source work. Thank you to the following organizations and communities:
+            Babels integrates with several technologies to make meaningful solutions. Thank you to the following organizations and communities:
           </p>
           <ul>
             <li><a href="https://www.anthropic.com">Anthropic</a> — AI assisted coding with Claude; safety research and integration and models powering Babel AI</li>
